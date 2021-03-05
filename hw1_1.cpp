@@ -27,6 +27,14 @@ int main() {
     for(int i = 0; i < inputAmount; i++) {
         cout << input[i] << " ";
 
+        //Simple check for one input
+        if(inputAmount == 1) {
+            mostFrequentNumber = input[0];
+            numFrequency = 1;
+            break;
+        }
+
+        //Check for input's > 1
         if(input[i] == input[i - 1]) {
             tempNumFrequency++;
         }
@@ -38,9 +46,14 @@ int main() {
             tempNumFrequency = 1;
         }
 
-        if(tempNumFrequency > numFrequency) {
+        if(tempNumFrequency >= numFrequency) {
             numFrequency = tempNumFrequency;
-            mostFrequentNumber = input[i - 1];
+            if(inputAmount > 2) {
+                mostFrequentNumber = input[i - 1];
+            }
+            else{
+                mostFrequentNumber = input[i];
+            }
         }
 
     }
