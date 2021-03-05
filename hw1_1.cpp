@@ -1,3 +1,14 @@
+/*
+ * Title: hw1_1.cpp
+ * Abstract: This program reads input numbers from a user
+ *           and displays the number that occurs most
+ *           frequently among all the input numbers.
+ * Author: Justin Mello
+ * ID: 2002
+ * Date: 03/05/2021
+ */
+
+
 #include <iostream>
 #include <algorithm>
 
