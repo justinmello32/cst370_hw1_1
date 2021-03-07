@@ -36,7 +36,6 @@ int main() {
 
     //Check to find most common number
     for(int i = 0; i < inputAmount; i++) {
-        cout << input[i] << " ";
 
         //Simple check for one input
         if(inputAmount == 1) {
@@ -68,7 +67,6 @@ int main() {
         }
 
     }
-    cout << " " << endl;
     cout << "Number: " << mostFrequentNumber << endl;
     cout << "Frequency: " << numFrequency << endl;
     return 0;
